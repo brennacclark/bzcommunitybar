@@ -1,8 +1,9 @@
 // import { useState } from 'react'
-import './App.css'
-import Header from './components/views/Header'
-import Hero from './components/views/Hero'
-import Menu from './components/views/Menu'
+import "./App.css";
+import Header from "./components/views/Header";
+import Hero from "./components/views/Hero";
+import Menu from "./components/views/Menu";
+import Events from "./components/views/Events";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -13,10 +14,10 @@ function App() {
         <Header />
         <Hero />
         <Menu />
+        <Events />
       </div>
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
