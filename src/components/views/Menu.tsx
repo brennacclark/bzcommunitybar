@@ -23,7 +23,7 @@ export default class Menu extends Component {
     const { activeTab } = this.state;
 
     return (
-      <div className="container my-4">
+      <div id="menu" className="container my-4">
         <style>{customStyles}</style>
         <h1 className="text-center mb-4">Our Menu</h1>
 
