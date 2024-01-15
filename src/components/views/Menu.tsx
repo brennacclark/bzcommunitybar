@@ -3,6 +3,13 @@ import Mocktails from "./menu/Mocktails";
 import Snacks from "./menu/Snacks";
 import Sandwiches from "./menu/Sandwiches";
 
+// Additional CSS for the inactive tab
+const customStyles = `
+  .inactive-tab {
+    color: #d2772e;
+  }
+`;
+
 export default class Menu extends Component {
   state = {
     activeTab: "drinks",
@@ -17,13 +24,16 @@ export default class Menu extends Component {
 
     return (
       <div className="container my-4">
+        <style>{customStyles}</style>
         <h1 className="text-center mb-4">Our Menu</h1>
 
         {/* Tab Navigation */}
-        <ul className="nav nav-tabs" id="menuTab" role="tablist">
+        <ul className="nav nav-tabs centered-tabs" id="menuTab" role="tablist">
           <li className="nav-item">
             <a
-              className={`nav-link ${activeTab === "drinks" ? "active" : ""}`}
+              className={`nav-link ${
+                activeTab === "drinks" ? "active" : "inactive-tab"
+              }`}
               id="drinks-tab"
               onClick={() => this.setActiveTab("drinks")}
               role="tab"
@@ -33,7 +43,9 @@ export default class Menu extends Component {
           </li>
           <li className="nav-item">
             <a
-              className={`nav-link ${activeTab === "snacks" ? "active" : ""}`}
+              className={`nav-link ${
+                activeTab === "snacks" ? "active" : "inactive-tab"
+              }`}
               id="snacks-tab"
               onClick={() => this.setActiveTab("snacks")}
               role="tab"
@@ -44,7 +56,7 @@ export default class Menu extends Component {
           <li className="nav-item">
             <a
               className={`nav-link ${
-                activeTab === "sandwiches" ? "active" : ""
+                activeTab === "sandwiches" ? "active" : "inactive-tab"
               }`}
               id="sandwiches-tab"
               onClick={() => this.setActiveTab("sandwiches")}
