@@ -1,0 +1,61 @@
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+.drink-label {
+  color: #d2772e;
+}
+
+.event-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.event-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.event-header {
+  background-color: #d2772e;
+  color: white;
+}
+
+.event-body {
+  background-color: #f8f9fa;
+}
+
+.event-title {
+  color: #d2772e;
+}
+
+.equal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.equal-content h5 {
+  flex-grow: 0;
+}
+
+.equal-content p {
+  flex-grow: 1;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+/* For the sake of this example, setting min-height to make footer stick at the bottom */
+#page-content {
+  min-height: calc(
+    100vh - 56px
+  ); /* Adjust the 56px based on the height of your navbar and footer */
+}
