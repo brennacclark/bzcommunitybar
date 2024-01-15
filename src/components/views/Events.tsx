@@ -2,9 +2,19 @@ import React, { Component } from "react";
 
 export default class Events extends Component {
   render() {
+    const customStyles = `
+    .event-card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin-bottom: 20px;
+    }
+    .container {
+        padding: 20px; /* Adds padding inside the container */
+    }
+    `;
     return (
       //  <!-- ### EVENTS CONTENT ### -->
       <div className="container mt-5">
+        <style>{customStyles}</style>
         <h2 className="text-center mb-4">Weekly Event Calendar</h2>
         <div className="row">
           {/* <!-- Tuesday --> */}
