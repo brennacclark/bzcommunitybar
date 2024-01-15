@@ -4,11 +4,11 @@ export default class Mocktails extends Component {
   render() {
     return (
       <div className="container mt-4">
-        <h2>Mocktails & Cocktails</h2>
         <p className="text-center">
           Ask us about our Non-Alcoholic options! All cocktails can be made
           without alcohol!
         </p>
+        <hr />
         <div className="row">
           <div className="col-md-6 mb-4">
             <strong>Atomic Cider - $11</strong>

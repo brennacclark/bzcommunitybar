@@ -4,7 +4,6 @@ export default class Sandwiches extends Component {
   render() {
     return (
       <div className="container mt-4">
-        <h2>Sandwiches</h2>
         <div className="row">
           <div className="col-md-6 mb-4">
             <span>Sausage & Peppers - $14.99</span>
