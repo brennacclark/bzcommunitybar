@@ -13,7 +13,7 @@ export default class Events extends Component {
     `;
     return (
       //  <!-- ### EVENTS CONTENT ### -->
-      <div className="container mt-5">
+      <div id="events" className="container mt-5">
         <style>{customStyles}</style>
         <h2 className="text-center mb-4">Weekly Event Calendar</h2>
         <div className="row">
@@ -71,6 +71,20 @@ export default class Events extends Component {
               </div>
             </div>
           </div>
+        </div>
+        <div className="text-center p-5">
+          <h5>
+            {" "}
+            <strong>Live Performances Coming Soon...</strong>
+          </h5>
+
+          <p>
+            For booking and inquiries, contact us at{" "}
+            <a href="mailto:bzcommunitybar@gmail.com">
+              bzcommunitybar@gmail.com
+            </a>
+            .
+          </p>
         </div>
       </div>
     );
