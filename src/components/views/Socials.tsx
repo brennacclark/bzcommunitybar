@@ -11,8 +11,9 @@ export default class Socials extends Component {
 
   render() {
     return (
-      <section className="container instagram-container rounded bg-dark p-4 my-2 shadow-lg">
-        <article className="row center-text">
+      <section className="container instagram-container  p-4 my-2">
+        <h2 className="text-center">Let's Get Connected!</h2>
+        <article className="row text-center">
           <div className="col-md-8 mx-auto">
             {" "}
             {/* Adjust the column size as needed */}
