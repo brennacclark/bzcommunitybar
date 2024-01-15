@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 
 export default class Footer extends Component {
   render() {
@@ -13,7 +13,7 @@ export default class Footer extends Component {
           <div>
             <strong>Address: </strong>10 Dorrance Street, Providence, RI 02903
           </div>
-          
+
           <div className="mt-3">
             &copy; 2024 B'z Community Bar. All Rights Reserved.
           </div>

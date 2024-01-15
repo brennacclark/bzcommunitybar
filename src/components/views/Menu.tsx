@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Mocktails from "./menu/Mocktails";
 import Snacks from "./menu/Snacks";
 import Sandwiches from "./menu/Sandwiches";

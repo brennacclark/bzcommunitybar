@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { Link, Element, scroller } from "react-scroll";
+import { Component } from "react";
 
 export default class Header extends Component {
   render() {
