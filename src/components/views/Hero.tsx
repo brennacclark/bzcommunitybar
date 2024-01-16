@@ -19,6 +19,13 @@ export default class Hero extends Component {
         flex-basis: 50%; /* Initially 50% width, so two items in a row */
       }
 
+      /* Style for the image */
+      .responsive-image {
+        max-width: 70%; /* Default size on large screens */
+        height: auto; /* Maintain aspect ratio */
+        transition: max-width 0.3s ease-in-out; /* Smooth transition */
+      }
+
       /* Media query for stacking on smaller screens */
       @media (max-width: 768px) {
         .content-container {
@@ -29,35 +36,18 @@ export default class Hero extends Component {
         .address {
           flex-basis: 100%; /* Full width for stacked items */
         }
-      }
 
-      /* Styles for the Bz_Sign image */
-      .bz-sign {
-        max-width: 300px; /* Maximum width of the image */
-        width: 100%; /* Make the image responsive */
-        height: auto; /* Maintain aspect ratio */
-      }
-
-      /* Media query for phone screen sizes */
-      @media (max-width: 600px) {
-        .bz-sign {
-          max-width: 250px; /* Smaller maximum width for phone screens */
+        .responsive-image {
+          max-width: 100%; /* Full width on smaller screens */
         }
       }
     `;
 
     return (
       <section className="text-light text-center">
-        <style>{customStyles}</style> {/* Include customStyles */}
+        <style>{customStyles}</style>
         <div className="container">
-          {/* Centered Image with responsive width control */}
-          <img
-            className="mx-auto d-block bz-sign"
-            src="/Bz_Sign_Clean.png"
-            alt="B'z Community Bar Logo"
-          />
           <div className="my-4 content-container">
-            {/* Headings within divs for semantic correctness */}
             <div className="day-time">
               <h6>Tuesday - Sunday | 5pm - 1am</h6>
             </div>
@@ -71,6 +61,14 @@ export default class Hero extends Component {
             in art, music, collaboration, and networking in the creative
             capital.
           </p>
+          <div>
+            <img
+              className="responsive-image" // Add this class to your image
+              src="https://scontent-atl3-1.cdninstagram.com/v/t39.30808-6/405667427_122107798520124051_5933981201947852795_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEzNTEuc2RyIn0&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_cat=103&_nc_ohc=-p4CmEfADrcAX8iSssn&edm=ACWDqb8AAAAA&ccb=7-5&ig_cache_key=MzI0NjExNDQxODI1MjIyMjU2Ng%3D%3D.2-ccb7
+-5&oh=00_AfDYvVVKueom_kFtXagSBYDoGb9AtokMucDSjl7_bj-SIA&oe=65AB90C2"
+              alt="Mocktail at B'z Community Bar"
+            />
+          </div>
         </div>
       </section>
     );
