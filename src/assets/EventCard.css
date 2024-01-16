@@ -1,0 +1,47 @@
+.event-card {
+  background-color: #f6c34f; /* Honey-like color */
+  border-radius: 15px; /* Soft rounded corners */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  overflow: hidden; /* Ensures the content fits within the border radius */
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05); /* Slight scale on hover for interactive effect */
+}
+
+.event-header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2a117; /* Darker shade for header */
+  color: white;
+  padding: 10px;
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  ); /* Hexagonal shape */
+}
+
+.event-body {
+  background-color: #fffbe6; /* Light background for the body */
+  padding: 15px;
+}
+
+.event-title {
+  color: #b38600; /* Dark honey color for title */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add a honeycomb texture to the background */
+.container {
+  background-image: url("path_to_honeycomb_texture_image");
+  background-size: cover;
+}
