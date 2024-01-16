@@ -1,5 +1,5 @@
 // EventCard.tsx
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import "../assets/EventCard.css";
 
 // Define the type for the props
