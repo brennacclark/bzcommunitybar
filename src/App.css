@@ -1,6 +1,6 @@
 :root {
-  --dark-bg-color: #1b1919;
-  --dark-heading-color: #1b1919;
+  --dark-bg-color: #0a0a0a;
+  --dark-heading-color: #0a0a0a;
   --dark-text-color: #eee;
 }
 
@@ -15,16 +15,14 @@ body {
 }
 
 .canvas {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0px auto;
   padding: 20px;
 }
 
 #page-content {
   flex: 1 0 auto;
-  min-height: calc(
-    100vh - 56px
-  ); /* Adjust the 56px based on the height of your navbar and footer */
+  min-height: calc(100vh - 56px);
 }
 
 /* Media query for larger margins on desktop */
@@ -33,9 +31,5 @@ body {
   body {
   }
 
-  #page-content {
-    min-height: calc(
-      100vh - 76px
-    ); /* Adjust the 76px based on the height of your navbar and footer including the larger margin */
-  }
+
 }

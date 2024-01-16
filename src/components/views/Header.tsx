@@ -1,15 +1,36 @@
-import { Component } from "react";
+import React, { Component } from "react";
 
 export default class Header extends Component {
   render() {
+    const customStyles = `
+      /* Increase the size of social media icons */
+      .social-icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      /* Center the social media icons vertically */
+      .social-icons-container {
+        display: flex;
+        align-items: center;
+      }
+    `;
+
     return (
       // HEADER CONTENT
       <header>
-        <nav className="navbar navbar-expand-md navbar-dark bg-dark px-3">
+        <style>{customStyles}</style>
+        <nav
+          className="navbar navbar-expand-md px-3 navbar-dark"
+          style={{
+            backgroundColor: "var(--dark-bg-color)",
+            color: "var(--dark-text-color)",
+          }}
+        >
           <div className="container-fluid">
-            <a href="#" className="navbar-brand">
+            {/* <a href="#" className="navbar-brand">
               B'z Community Bar
-            </a>
+            </a> */}
 
             {/*  Menu Toggle  */}
             <button
@@ -27,12 +48,12 @@ export default class Header extends Component {
             {/*  Menu Content */}
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item px-2">
+                <li className="nav-link px-2">
                   <a href="#menu" className="nav-link">
                     Menu
                   </a>
                 </li>
-                <li className="nav-item px-2">
+                <li className="nav-link px-2">
                   <a href="#events" className="nav-link">
                     Events
                   </a>
@@ -40,7 +61,7 @@ export default class Header extends Component {
               </ul>
 
               {/*  Social Media Icons */}
-              <div className="d-flex align-items-center">
+              <div className="social-icons-container">
                 <a
                   href="https://www.instagram.com/bz.communitybar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
