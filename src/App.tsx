@@ -19,8 +19,8 @@ function App() {
           <Menu />
           <Events />
           <Socials />
-          <Footer />
         </div>
+        <Footer />
       </div>
     </>
   );
