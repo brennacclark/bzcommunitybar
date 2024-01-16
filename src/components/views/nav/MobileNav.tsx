@@ -35,12 +35,14 @@ export default class MobileNav extends Component {
             <div className="d-flex justify-content-between w-100 align-items-center">
               {/* Image Div */}
               <div>
-                <img
-                  className="mx-auto d-block bz-sign"
-                  src="/Bz_Sign_Clean.png"
-                  alt="B'z Community Bar Logo"
-                  style={{ width: "100px", height: "auto" }}
-                />
+                <a href="#" className="navbar-brand">
+                  <img
+                    className="mx-auto d-block bz-sign"
+                    src="/Bz_Sign_Clean.png"
+                    alt="B'z Community Bar Logo"
+                    style={{ width: "100px", height: "auto" }}
+                  />
+                </a>
               </div>
 
               {/*  Menu Content */}
