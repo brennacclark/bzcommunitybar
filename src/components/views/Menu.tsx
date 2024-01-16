@@ -8,6 +8,10 @@ const customStyles = `
   .inactive-tab {
     color: #d2772e;
   }
+
+  .drink-label {
+  color: #d2772e;
+}
 `;
 
 export default class Menu extends Component {

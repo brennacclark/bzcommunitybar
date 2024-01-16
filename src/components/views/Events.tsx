@@ -1,4 +1,7 @@
 import { Component } from "react";
+// import Carousel from "react-bootstrap/Carousel";
+// import Event_Image_Comedy from "../../assets/events/Comedy_Brett_Davey.png";
+// import Event_Image_214 from "../../assets/events/Valentines.jpg";
 
 export default class Events extends Component {
   render() {
@@ -9,6 +12,60 @@ export default class Events extends Component {
     }
     .container {
         padding: 20px; /* Adds padding inside the container */
+    }
+
+    .custom-carousel .carousel-item img {
+      margin: 0 auto; // Centers the image in the carousel item
+    }
+
+    .custom-carousel {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%; // Adjust this as needed
+    }
+
+    .carousel-image {
+      width: 50%; /* or use 'w-50' as you are currently using */
+      height: 450; /* Adjust this value as needed */
+      object-fit: cover; /* This helps maintain the aspect ratio */
+    }
+
+    .event-card {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      border: none;
+    }
+
+    .event-card:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    .event-header {
+      background-color: #d2772e;
+      color: white;
+    }
+
+    .event-body {
+      background-color: #f8f9fa;
+    }
+
+    .event-title {
+      color: #d2772e;
+    }
+
+    .equal-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .equal-content h5 {
+      flex-grow: 0;
+    }
+
+    .equal-content p {
+      flex-grow: 1;
     }
     `;
     return (
@@ -72,13 +129,29 @@ export default class Events extends Component {
             </div>
           </div>
         </div>
-        <div className="text-center p-5">
-          <h5>
-            {" "}
-            <strong>Live Performances Coming Soon...</strong>
-          </h5>
 
-          <p>
+        {/* UPCOMING EVENTS */}
+
+        <div className="text-center">
+          {/* <h4>Upcoming Events</h4>
+          <Carousel className="custom-carousel">
+            <Carousel.Item>
+              <img
+                src={Event_Image_214}
+                className="d-block carousel-image"
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                src={Event_Image_Comedy}
+                className="d-block carousel-image"
+                alt="Second slide"
+              />
+            </Carousel.Item>
+          </Carousel> */}
+
+          <p className="p-3">
             For booking and inquiries, contact us at{" "}
             <a href="mailto:bzcommunitybar@gmail.com">
               bzcommunitybar@gmail.com
