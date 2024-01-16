@@ -58,7 +58,7 @@ export default class Menu extends Component {
               onClick={() => this.setActiveTab("snacks")}
               role="tab"
             >
-              Snacks and Grub
+              Snacks
             </a>
           </li>
           <li className="nav-item">
@@ -87,7 +87,7 @@ export default class Menu extends Component {
             <Mocktails />
           </div>
 
-          {/* Snacks and Grub Tab */}
+          {/* Snacks Tab */}
           <div
             className={`tab-pane fade ${
               activeTab === "snacks" ? "show active" : ""
