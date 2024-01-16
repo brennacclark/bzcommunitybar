@@ -5,8 +5,8 @@ export default class Mocktails extends Component {
     return (
       <div className="container mt-4">
         <p className="text-center">
-          Ask us about our Non-Alcoholic options! All cocktails can be made
-          without alcohol!
+          Ask us about our <strong>Non-Alcoholic</strong> options! All cocktails
+          can be made without alcohol!
         </p>
         <hr />
         <div className="row">
