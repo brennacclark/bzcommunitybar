@@ -1,8 +1,8 @@
 // import { useState } from 'react'
 import "./App.css";
-import Header from "./components/views/Header";
+import Navbar from "./components/views/nav/Navbar";
 import Hero from "./components/views/Hero";
-import Menu from "./components/views/Menu";
+import Menu from "./components/views/menu/Menu";
 import Events from "./components/views/Events";
 import Socials from "./components/views/Socials";
 import Footer from "./components/views/Footer";
@@ -14,7 +14,7 @@ function App() {
     <>
       <div className="app-container">
         <div className="canvas">
-          <Header />
+          <Navbar />
           <Hero />
           <Menu />
           <Events />
