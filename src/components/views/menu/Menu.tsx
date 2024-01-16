@@ -1,7 +1,7 @@
 import { Component } from "react";
-import Mocktails from "./menu/Mocktails";
-import Snacks from "./menu/Snacks";
-import Sandwiches from "./menu/Sandwiches";
+import Mocktails from "./Mocktails";
+import Snacks from "./Snacks";
+import Sandwiches from "./Sandwiches";
 
 // Additional CSS for the inactive tab
 const customStyles = `
