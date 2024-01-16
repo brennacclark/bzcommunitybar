@@ -3,7 +3,7 @@ import { Component } from "react";
 export default class Snacks extends Component {
   render() {
     return (
-      <div className="container mt-4">
+      <div className="container mt-4 text-center">
         <div className="row">
           <div className="col-md-4 mb-4">
             <span>Mozzarella Sticks - $8.99</span>

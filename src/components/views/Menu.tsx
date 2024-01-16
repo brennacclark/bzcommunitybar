@@ -10,8 +10,8 @@ const customStyles = `
   }
 
   .drink-label {
-  color: #d2772e;
-}
+    color: #d2772e;
+  }
 `;
 
 export default class Menu extends Component {
@@ -31,8 +31,12 @@ export default class Menu extends Component {
         <style>{customStyles}</style>
         <h1 className="text-center mb-4">Our Menu</h1>
 
-        {/* Tab Navigation */}
-        <ul className="nav nav-tabs centered-tabs" id="menuTab" role="tablist">
+        {/* Centered Tab Navigation */}
+        <ul
+          className="nav nav-tabs justify-content-center"
+          id="menuTab"
+          role="tablist"
+        >
           <li className="nav-item">
             <a
               className={`nav-link ${
