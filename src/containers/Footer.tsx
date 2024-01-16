@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Map from "./Map";
+import Map from "../components/Map";
 
 export default class Footer extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class Footer extends Component {
       .footer-container {
         display: flex;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
         max-width: 900px;
         margin: 0px auto;
       }
@@ -22,7 +22,7 @@ export default class Footer extends Component {
       }
 
       .contactLinkText {
-        color: gray;
+        color: oragne;
         text-decoration: none;
       }
 
@@ -51,7 +51,7 @@ export default class Footer extends Component {
           <div className="map footer-column">
             <Map />
           </div>
-          <div className="map-info footer-column text-center">
+          <div className="map-info footer-column text-center align-i">
             <div>
               <p>
                 {" "}
@@ -63,8 +63,13 @@ export default class Footer extends Component {
                 | Closed Monday
               </p>
               <p>
-                <strong>Feedback or Questions?</strong> Email us at{" "}
-                <a href="mailto:bzcommunitybar@gmail.com" className="contactLinkText">
+                <strong>Feedback or Questions?</strong>
+                <br />
+                Email us at{" "}
+                <a
+                  href="mailto:bzcommunitybar@gmail.com"
+                  className="contactLinkText"
+                >
                   bzcommunitybar@gmail.com
                 </a>
                 .
