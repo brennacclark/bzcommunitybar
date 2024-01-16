@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Map from "./Map";
 
 export default class Footer extends Component {

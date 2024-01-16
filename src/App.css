@@ -27,9 +27,7 @@ body {
 
 /* Media query for larger margins on desktop */
 @media (min-width: 768px) {
-  html,
+  /* html,
   body {
-  }
-
-
+  } */
 }
