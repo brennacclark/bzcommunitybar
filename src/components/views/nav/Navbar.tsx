@@ -14,7 +14,11 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return <>{isMobile ? <MobileNav /> : <DesktopNav />}</>;
+  return (
+    <header className="sticky-top">
+      {isMobile ? <MobileNav /> : <DesktopNav />}
+    </header>
+  );
 };
 
 export default Navbar;
